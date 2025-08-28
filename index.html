@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrier Pigeon $CPI - PulseChain Community Meme Experiment</title>
+    <meta name="description" content="Carrier Pigeon $CPI delivers bullish PulseChain messages. Community-driven meme experiment spreading the word about the fastest, cheapest blockchain.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Carrier Pigeon $CPI - PulseChain Community Meme">
+    <meta property="og:description" content="Delivering bullish PulseChain messages through community-powered memes. The marketing starts now.">
+    <meta property="og:image" content="./logo.png">
+    <meta property="og:url" content="">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carrier Pigeon $CPI - PulseChain Community Meme">
+    <meta name="twitter:description" content="Delivering bullish PulseChain messages through community-powered memes.">
+    <meta name="twitter:image" content="./logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./logo.png">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="./logo.png" alt="Carrier Pigeon CPI logo" class="logo">
+            </div>
+            <nav class="nav-section" role="navigation">
+                <a href="#" class="nav-btn" id="chartBtn" aria-label="View Chart">Chart</a>
+                <a href="#" class="nav-btn" id="twitterBtn" aria-label="Visit Twitter">Twitter</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" role="main">
+        <!-- Hero Title -->
+        <section class="hero-section">
+            <h1 class="hero-title">THE MARKETING STARTS NOW</h1>
+        </section>
+
+        <!-- Envelope Component -->
+        <section id="envelope" class="envelope-section" role="region" aria-label="Interactive Message Envelope">
+            <div class="envelope-container">
+                <!-- Envelope SVG -->
+                <div class="envelope" id="envelopeEl" tabindex="0" role="button" aria-expanded="false" aria-label="Click to open envelope and reveal message">
+                    <!-- Envelope Back -->
+                    <div class="envelope-back"></div>
+                    <!-- Envelope Front -->
+                    <div class="envelope-front"></div>
+                    <!-- Envelope Flap -->
+                    <div class="envelope-flap" id="envelopeFlap"></div>
+                    <!-- Letter -->
+                    <div class="letter" id="letter">
+                        <div class="letter-content">
+                            <p class="message-text" id="messageText">Click to reveal message</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="controls" role="group" aria-label="Message controls">
+                    <button class="control-btn primary" id="openBtn" aria-label="Open envelope">Open</button>
+                    <button class="control-btn" id="shuffleBtn" aria-label="Get new random message">Shuffle</button>
+                    <button class="control-btn" id="copyBtn" aria-label="Copy message to clipboard">Copy</button>
+                    <button class="control-btn" id="tweetBtn" aria-label="Tweet this message">Tweet</button>
+                    <button class="control-btn toggle" id="autoplayBtn" aria-label="Toggle autoplay messages" aria-pressed="false">Autoplay</button>
+                </div>
+
+                <!-- Copy Feedback -->
+                <div class="copy-feedback" id="copyFeedback" role="status" aria-live="polite">Copied!</div>
+            </div>
+
+            <!-- Particles Container -->
+            <div class="particles-container" id="particlesContainer" aria-hidden="true"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <p class="footer-text">Carrier Pigeon $CPI. Community meme experiment.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link" id="footerChartBtn">Chart</a>
+                <a href="#" class="footer-link" id="footerTwitterBtn">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
