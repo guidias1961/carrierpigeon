@@ -1,6 +1,6 @@
 // Configuration Constants
 const CHART_URL = "https://dexscreener.com/yourpair";
-const TWITTER_URL = "https://twitter.com/yourhandle";
+const TWITTER_URL = "https://x.com/CPIgeonPulse";
 
 // Message Pool - 60+ bullish PulseChain messages
 const MESSAGES = [
